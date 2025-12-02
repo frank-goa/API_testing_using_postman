@@ -1,187 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite id="0" hostname="http://localhost" package="" name="Health - GET /health" tests="4" failures="0" errors="0" timestamp="2025-12-02T09:06:58.304" time="0.019">
+  <testsuite id="0" hostname="http://localhost" package="" name="Health - GET /health" tests="4" failures="0" errors="0" timestamp="2025-12-02T11:03:27.538" time="0.024">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
-    <testcase classname=" / Health - GET /health" name="Status code is 200" time="0.005"/>
-    <testcase classname=" / Health - GET /health" name="Response has JSON content-type" time="0.005"/>
-    <testcase classname=" / Health - GET /health" name="Response body contains status: ok" time="0.005"/>
-    <testcase classname=" / Health - GET /health" name="Response has a timestamp field" time="0.005"/>
+    <testcase classname=" / Health - GET /health" name="Status code is 200" time="0.006"/>
+    <testcase classname=" / Health - GET /health" name="Response has JSON content-type" time="0.006"/>
+    <testcase classname=" / Health - GET /health" name="Response body contains status: ok" time="0.006"/>
+    <testcase classname=" / Health - GET /health" name="Response has a timestamp field" time="0.006"/>
   </testsuite>
-  <testsuite id="1" hostname="http://localhost" package="" name="Test - Headers - GET /test/headers" tests="3" failures="0" errors="0" timestamp="2025-12-02T09:06:58.323" time="0.002">
+  <testsuite id="1" hostname="http://localhost" package="" name="Test - Headers - GET /test/headers" tests="3" failures="0" errors="0" timestamp="2025-12-02T11:03:27.562" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Test - Headers - GET /test/headers" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Test - Headers - GET /test/headers" name="Response contains headers object" time="0.001"/>
     <testcase classname=" / Test - Headers - GET /test/headers" name="Server echoes X-Custom-Header" time="0.001"/>
   </testsuite>
-  <testsuite id="2" hostname="http://localhost" package="" name="Test - Set Cookie - GET /test/set-cookie" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.325" time="0.003">
+  <testsuite id="2" hostname="http://localhost" package="" name="Test - Set Cookie - GET /test/set-cookie" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.564" time="0.003">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Test - Set Cookie - GET /test/set-cookie" name="Status code is 200" time="0.002"/>
     <testcase classname=" / Test - Set Cookie - GET /test/set-cookie" name="demoCookie is set in response" time="0.002"/>
   </testsuite>
-  <testsuite id="3" hostname="http://localhost" package="" name="Test - Get Cookies - GET /test/get-cookies" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.328" time="0.002">
+  <testsuite id="3" hostname="http://localhost" package="" name="Test - Get Cookies - GET /test/get-cookies" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.567" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Test - Get Cookies - GET /test/get-cookies" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Test - Get Cookies - GET /test/get-cookies" name="Cookies object contains demoCookie" time="0.001"/>
   </testsuite>
-  <testsuite id="4" hostname="http://localhost" package="" name="Auth - Login JWT - POST /auth/login-jwt" tests="3" failures="0" errors="0" timestamp="2025-12-02T09:06:58.330" time="0.008">
+  <testsuite id="4" hostname="http://localhost" package="" name="Auth - Login JWT - POST /auth/login-jwt" tests="3" failures="0" errors="0" timestamp="2025-12-02T11:03:27.569" time="0.004">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
-    <testcase classname=" / Auth - Login JWT - POST /auth/login-jwt" name="Status code is 200" time="0.003"/>
-    <testcase classname=" / Auth - Login JWT - POST /auth/login-jwt" name="Login response has token" time="0.003"/>
-    <testcase classname=" / Auth - Login JWT - POST /auth/login-jwt" name="Save JWT token to environment" time="0.003"/>
+    <testcase classname=" / Auth - Login JWT - POST /auth/login-jwt" name="Status code is 200" time="0.001"/>
+    <testcase classname=" / Auth - Login JWT - POST /auth/login-jwt" name="Login response has token" time="0.001"/>
+    <testcase classname=" / Auth - Login JWT - POST /auth/login-jwt" name="Save JWT token to environment" time="0.001"/>
   </testsuite>
-  <testsuite id="5" hostname="http://localhost" package="" name="Auth - Me (JWT protected) - GET /auth/me" tests="3" failures="0" errors="0" timestamp="2025-12-02T09:06:58.338" time="0.003">
+  <testsuite id="5" hostname="http://localhost" package="" name="Auth - Me (JWT protected) - GET /auth/me" tests="3" failures="0" errors="0" timestamp="2025-12-02T11:03:27.573" time="0.003">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Auth - Me (JWT protected) - GET /auth/me" name="Status is 200" time="0.001"/>
     <testcase classname=" / Auth - Me (JWT protected) - GET /auth/me" name="User info is present" time="0.001"/>
     <testcase classname=" / Auth - Me (JWT protected) - GET /auth/me" name="Message confirms JWT auth" time="0.001"/>
   </testsuite>
-  <testsuite id="6" hostname="http://localhost" package="" name="Auth - Login Cookie - POST /auth/login-cookie" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.341" time="0.002">
+  <testsuite id="6" hostname="http://localhost" package="" name="Auth - Login Cookie - POST /auth/login-cookie" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.576" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Auth - Login Cookie - POST /auth/login-cookie" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Auth - Login Cookie - POST /auth/login-cookie" name="sessionId cookie set" time="0.001"/>
   </testsuite>
-  <testsuite id="7" hostname="http://localhost" package="" name="Auth - Me Cookie - GET /auth/me-cookie" tests="3" failures="0" errors="0" timestamp="2025-12-02T09:06:58.343" time="0.002">
+  <testsuite id="7" hostname="http://localhost" package="" name="Auth - Me Cookie - GET /auth/me-cookie" tests="3" failures="0" errors="0" timestamp="2025-12-02T11:03:27.578" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Auth - Me Cookie - GET /auth/me-cookie" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Auth - Me Cookie - GET /auth/me-cookie" name="User info from cookie auth" time="0.001"/>
     <testcase classname=" / Auth - Me Cookie - GET /auth/me-cookie" name="Message confirms cookie auth" time="0.001"/>
   </testsuite>
-  <testsuite id="8" hostname="http://localhost" package="" name="Students - List All - GET /students" tests="3" failures="0" errors="0" timestamp="2025-12-02T09:06:58.345" time="0.003">
+  <testsuite id="8" hostname="http://localhost" package="" name="Students - List All - GET /students" tests="3" failures="0" errors="0" timestamp="2025-12-02T11:03:27.580" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Students - List All - GET /students" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Students - List All - GET /students" name="Response has count and data array" time="0.001"/>
     <testcase classname=" / Students - List All - GET /students" name="First student has required fields (if any exist)" time="0.001"/>
   </testsuite>
-  <testsuite id="9" hostname="http://localhost" package="" name="Students - Get by ID - GET /students/1" tests="3" failures="0" errors="0" timestamp="2025-12-02T09:06:58.348" time="0.002">
+  <testsuite id="9" hostname="http://localhost" package="" name="Students - Get by ID - GET /students/1" tests="3" failures="0" errors="0" timestamp="2025-12-02T11:03:27.582" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Students - Get by ID - GET /students/1" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Students - Get by ID - GET /students/1" name="Student has id 1" time="0.001"/>
     <testcase classname=" / Students - Get by ID - GET /students/1" name="Student object has required fields" time="0.001"/>
   </testsuite>
-  <testsuite id="10" hostname="http://localhost" package="" name="Students - Create (JWT) - POST /students" tests="3" failures="0" errors="0" timestamp="2025-12-02T09:06:58.350" time="0.002">
+  <testsuite id="10" hostname="http://localhost" package="" name="Students - Create (JWT) - POST /students" tests="3" failures="0" errors="0" timestamp="2025-12-02T11:03:27.584" time="0.004">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Students - Create (JWT) - POST /students" name="Status code is 201" time="0.001"/>
     <testcase classname=" / Students - Create (JWT) - POST /students" name="Student created with id" time="0.001"/>
     <testcase classname=" / Students - Create (JWT) - POST /students" name="Save created student id" time="0.001"/>
   </testsuite>
-  <testsuite id="11" hostname="http://localhost" package="" name="Students - Update (PUT, JWT) - PUT /students/{{createdStudentId}}" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.352" time="0.003">
+  <testsuite id="11" hostname="http://localhost" package="" name="Students - Update (PUT, JWT) - PUT /students/{{createdStudentId}}" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.588" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
-    <testcase classname=" / Students - Update (PUT, JWT) - PUT /students/{{createdStudentId}}" name="Status code is 200" time="0.002"/>
-    <testcase classname=" / Students - Update (PUT, JWT) - PUT /students/{{createdStudentId}}" name="Student updated correctly" time="0.002"/>
+    <testcase classname=" / Students - Update (PUT, JWT) - PUT /students/{{createdStudentId}}" name="Status code is 200" time="0.001"/>
+    <testcase classname=" / Students - Update (PUT, JWT) - PUT /students/{{createdStudentId}}" name="Student updated correctly" time="0.001"/>
   </testsuite>
-  <testsuite id="12" hostname="http://localhost" package="" name="Students - Partial Update (PATCH, JWT) - PATCH /students/{{createdStudentId}}" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.355" time="0.002">
+  <testsuite id="12" hostname="http://localhost" package="" name="Students - Partial Update (PATCH, JWT) - PATCH /students/{{createdStudentId}}" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.590" time="0.003">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
-    <testcase classname=" / Students - Partial Update (PATCH, JWT) - PATCH /students/{{createdStudentId}}" name="Status code is 200" time="0.001"/>
-    <testcase classname=" / Students - Partial Update (PATCH, JWT) - PATCH /students/{{createdStudentId}}" name="Age field updated only (basic check)" time="0.001"/>
+    <testcase classname=" / Students - Partial Update (PATCH, JWT) - PATCH /students/{{createdStudentId}}" name="Status code is 200" time="0.002"/>
+    <testcase classname=" / Students - Partial Update (PATCH, JWT) - PATCH /students/{{createdStudentId}}" name="Age field updated only (basic check)" time="0.002"/>
   </testsuite>
-  <testsuite id="13" hostname="http://localhost" package="" name="Students - Delete (JWT) - DELETE /students/{{createdStudentId}}" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.357" time="0.002">
+  <testsuite id="13" hostname="http://localhost" package="" name="Students - Delete (JWT) - DELETE /students/{{createdStudentId}}" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.593" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Students - Delete (JWT) - DELETE /students/{{createdStudentId}}" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Students - Delete (JWT) - DELETE /students/{{createdStudentId}}" name="Deleted student has correct id" time="0.001"/>
   </testsuite>
-  <testsuite id="14" hostname="http://localhost" package="" name="Students - Protected (Cookie) - GET /students/protected/cookie-only" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.359" time="0.002">
+  <testsuite id="14" hostname="http://localhost" package="" name="Students - Protected (Cookie) - GET /students/protected/cookie-only" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.595" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Students - Protected (Cookie) - GET /students/protected/cookie-only" name="Status code is 200 (if session cookie present)" time="0.001"/>
     <testcase classname=" / Students - Protected (Cookie) - GET /students/protected/cookie-only" name="Cookie-protected message present" time="0.001"/>
   </testsuite>
-  <testsuite id="15" hostname="http://localhost" package="" name="Auth - Logout Cookie - POST /auth/logout-cookie" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.361" time="0.002">
+  <testsuite id="15" hostname="http://localhost" package="" name="Auth - Logout Cookie - POST /auth/logout-cookie" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.597" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Auth - Logout Cookie - POST /auth/logout-cookie" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Auth - Logout Cookie - POST /auth/logout-cookie" name="Logout message present" time="0.001"/>
   </testsuite>
-  <testsuite id="16" hostname="http://localhost" package="" name="Students - Protected (JWT) - GET /students/protected/jwt-only" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.363" time="0.002">
+  <testsuite id="16" hostname="http://localhost" package="" name="Students - Protected (JWT) - GET /students/protected/jwt-only" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.599" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Students - Protected (JWT) - GET /students/protected/jwt-only" name="Status code is 200" time="0.001"/>
     <testcase classname=" / Students - Protected (JWT) - GET /students/protected/jwt-only" name="JWT-protected message present" time="0.001"/>
   </testsuite>
-  <testsuite id="17" hostname="http://localhost" package="" name="Error Case - Invalid ID - GET /students/abc" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.365" time="0.001">
+  <testsuite id="17" hostname="http://localhost" package="" name="Error Case - Invalid ID - GET /students/abc" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.601" time="0.001">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Error Case - Invalid ID - GET /students/abc" name="Status code is 400" time="0.001"/>
     <testcase classname=" / Error Case - Invalid ID - GET /students/abc" name="Error message present" time="0.001"/>
   </testsuite>
-  <testsuite id="18" hostname="http://localhost" package="" name="Error Case - Not Found - GET /students/99999" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.366" time="0.001">
+  <testsuite id="18" hostname="http://localhost" package="" name="Error Case - Not Found - GET /students/99999" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.602" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Error Case - Not Found - GET /students/99999" name="Status code is 404" time="0.001"/>
     <testcase classname=" / Error Case - Not Found - GET /students/99999" name="Error message present" time="0.001"/>
   </testsuite>
-  <testsuite id="19" hostname="http://localhost" package="" name="Error Case - Create Student Missing Fields - POST /students" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.367" time="0.002">
+  <testsuite id="19" hostname="http://localhost" package="" name="Error Case - Create Student Missing Fields - POST /students" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.604" time="0.003">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
-    <testcase classname=" / Error Case - Create Student Missing Fields - POST /students" name="Status code is 400" time="0.001"/>
-    <testcase classname=" / Error Case - Create Student Missing Fields - POST /students" name="Validation error present" time="0.001"/>
+    <testcase classname=" / Error Case - Create Student Missing Fields - POST /students" name="Status code is 400" time="0.002"/>
+    <testcase classname=" / Error Case - Create Student Missing Fields - POST /students" name="Validation error present" time="0.002"/>
   </testsuite>
-  <testsuite id="20" hostname="http://localhost" package="" name="Error Case - Protected JWT without token - GET /students/protected/jwt-only" tests="2" failures="0" errors="0" timestamp="2025-12-02T09:06:58.369" time="0.002">
+  <testsuite id="20" hostname="http://localhost" package="" name="Error Case - Protected JWT without token - GET /students/protected/jwt-only" tests="2" failures="0" errors="0" timestamp="2025-12-02T11:03:27.607" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
     <testcase classname=" / Error Case - Protected JWT without token - GET /students/protected/jwt-only" name="Status code is 401" time="0.001"/>
     <testcase classname=" / Error Case - Protected JWT without token - GET /students/protected/jwt-only" name="Error message for missing auth header" time="0.001"/>
   </testsuite>
-  <testsuite id="21" hostname="http://localhost" package="" name="Error Case - Protected Cookie without session - GET /students/protected/cookie-only" tests="1" failures="0" errors="0" timestamp="2025-12-02T09:06:58.371" time="0.001">
+  <testsuite id="21" hostname="http://localhost" package="" name="Error Case - Protected Cookie without session - GET /students/protected/cookie-only" tests="1" failures="0" errors="0" timestamp="2025-12-02T11:03:27.609" time="0.002">
     <properties>
-      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"/>
+      <property name="jwtToken" value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"/>
       <property name="base_url" value="http://localhost:3000"/>
     </properties>
-    <testcase classname=" / Error Case - Protected Cookie without session - GET /students/protected/cookie-only" name="Unauthenticated: Status 401 and error present" time="0.001"/>
+    <testcase classname=" / Error Case - Protected Cookie without session - GET /students/protected/cookie-only" name="Unauthenticated: Status 401 and error present" time="0.002"/>
   </testsuite>
 </testsuites>

@@ -7,7 +7,7 @@
     },
     "item": [
       {
-        "id": "deb9edd3-0ed8-41bc-8ce2-d769b72f36bb",
+        "id": "a56cdf2b-61ce-4f1c-9774-a2e21ae0b836",
         "name": "Health - GET /health",
         "request": {
           "url": {
@@ -27,7 +27,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "860c0d5d-50ac-4c12-92bd-5cf1a4946103",
+              "id": "5dc160a3-c239-4243-b430-560e71bf139a",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -51,13 +51,13 @@
                 "  pm.expect(new Date(json.timestamp).toString()).not.to.equal(\"Invalid Date\");",
                 "});"
               ],
-              "_lastExecutionId": "f5303e9c-cb35-4671-b80a-d0c7568da93c"
+              "_lastExecutionId": "9529b5ea-4af8-4874-9c03-680c598ac203"
             }
           }
         ]
       },
       {
-        "id": "0869fd22-67ad-4dba-bea8-582a9b30b9f7",
+        "id": "4dd59b87-c628-4821-be26-581c4743f8d6",
         "name": "Test - Headers - GET /test/headers",
         "request": {
           "url": {
@@ -84,7 +84,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "0f6c9ea5-3b96-4bec-b539-fc0185e695f8",
+              "id": "8c3e5231-7ddc-4b01-9f90-f3cb3f03903a",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -103,13 +103,13 @@
                 "  pm.expect(json.headers[\"x-custom-header\"]).to.eql(sentHeader);",
                 "});"
               ],
-              "_lastExecutionId": "79d14313-8907-48d5-8dee-74b64334c089"
+              "_lastExecutionId": "eba9a8f5-46b0-4361-96ff-ec6af33974c9"
             }
           }
         ]
       },
       {
-        "id": "0015e1c3-5ca8-45e4-8777-ddc9e8510442",
+        "id": "91bf60e8-b7f3-4f50-a429-83bc2006a028",
         "name": "Test - Set Cookie - GET /test/set-cookie",
         "request": {
           "url": {
@@ -130,7 +130,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "5ec1112b-ab2b-445f-8789-54424d05397f",
+              "id": "b4f36412-4d4c-4bbd-8394-1c9fb120ee1c",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -145,13 +145,13 @@
                 "  pm.expect(hasDemoCookie).to.be.true;",
                 "});"
               ],
-              "_lastExecutionId": "74eb4527-172c-46b0-a153-8595529a1d52"
+              "_lastExecutionId": "0c69e86e-d10c-4266-885f-7837190bf219"
             }
           }
         ]
       },
       {
-        "id": "ee06f2a8-53f9-4006-9a61-b133f1fc43f5",
+        "id": "e9bb93b6-0ed3-47f7-8188-7520d7bdcc08",
         "name": "Test - Get Cookies - GET /test/get-cookies",
         "request": {
           "url": {
@@ -172,7 +172,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "50362a70-df46-415e-9fd2-0a6134a2313a",
+              "id": "6dd44d4d-a057-45e6-b565-f950b2ec8bd3",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -187,13 +187,13 @@
                 "  pm.expect(json.cookies.demoCookie).to.eql(\"hello-from-server\");",
                 "});"
               ],
-              "_lastExecutionId": "fe2346c5-59fe-45a7-a351-6bc5b13e9efe"
+              "_lastExecutionId": "f8007a22-8b5c-4b24-bc3b-984d03e53f52"
             }
           }
         ]
       },
       {
-        "id": "dd3469ec-283c-480e-b22f-a15407ae1d9f",
+        "id": "2192b15e-d60e-46a3-8fb2-2adbbdd4a14b",
         "name": "Auth - Login JWT - POST /auth/login-jwt",
         "request": {
           "url": {
@@ -224,7 +224,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "8bdb292c-17cd-42e9-9a63-7633dff326ae",
+              "id": "351ed3cf-c3c6-4686-b955-a2045939fb63",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -242,13 +242,13 @@
                 "  pm.environment.set(\"jwtToken\", json.token);",
                 "});"
               ],
-              "_lastExecutionId": "b4121caa-075f-4db8-b286-b2e5f2f92c6a"
+              "_lastExecutionId": "b83be014-c03c-4d4d-8a16-12462d5af2b9"
             }
           }
         ]
       },
       {
-        "id": "938e94e7-9570-4e5e-9041-accabd279406",
+        "id": "a536195c-6ea9-455d-b208-052e041b4a82",
         "name": "Auth - Me (JWT protected) - GET /auth/me",
         "request": {
           "url": {
@@ -275,7 +275,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "f253f982-411a-4fa1-b56f-8853b3f33fe7",
+              "id": "1aa13dcf-bef3-4eaf-b14e-b541d0e5ba8d",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status is 200\", function () {",
@@ -294,13 +294,13 @@
                 "  pm.expect(json.message).to.include(\"authenticated with JWT\");",
                 "});"
               ],
-              "_lastExecutionId": "a1502f8b-cb28-4edb-a05f-9d467b24ad45"
+              "_lastExecutionId": "306792ed-02d2-4fc8-b2d1-226b08c8524a"
             }
           }
         ]
       },
       {
-        "id": "95b6d253-b653-4dcb-90f1-a4ab185b9239",
+        "id": "35c32c19-4f55-47ad-bc06-cd085f603d47",
         "name": "Auth - Login Cookie - POST /auth/login-cookie",
         "request": {
           "url": {
@@ -331,7 +331,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "01319b1c-015d-47d1-9217-5c798197d74a",
+              "id": "5f5e21c5-8efc-4269-9edb-3b60f5956ca4",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -345,13 +345,13 @@
                 "  pm.expect(hasSessionCookie).to.be.true;",
                 "});"
               ],
-              "_lastExecutionId": "41c4c5b6-02d0-4006-a0ce-250286eb2c48"
+              "_lastExecutionId": "4c4c832e-2c17-4d74-9591-dd7ecd51a78e"
             }
           }
         ]
       },
       {
-        "id": "a4de859f-64d7-4032-b44f-808368ac0802",
+        "id": "68562169-8f33-45cd-8f75-069886dc85d0",
         "name": "Auth - Me Cookie - GET /auth/me-cookie",
         "request": {
           "url": {
@@ -372,7 +372,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "5db39147-3733-47ee-aa4f-a1e4f3f377fa",
+              "id": "cdb23e3a-c189-4759-97cf-8c739e051a1c",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -390,13 +390,13 @@
                 "  pm.expect(json.message).to.include(\"authenticated with a cookie\");",
                 "});"
               ],
-              "_lastExecutionId": "21a8dae1-cafc-4507-a6ec-f227679584ea"
+              "_lastExecutionId": "73213e19-f012-49ec-9244-afe833dc9b16"
             }
           }
         ]
       },
       {
-        "id": "3324c73d-e731-47a7-ba09-d948281fe75b",
+        "id": "6fbddf01-8dec-4850-95f8-3dafc1780019",
         "name": "Students - List All - GET /students",
         "request": {
           "url": {
@@ -416,7 +416,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "412178c7-8625-42d2-b557-1c5a11875287",
+              "id": "12ce7945-c7b5-4bfc-8803-2704a9870251",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -442,13 +442,13 @@
                 "  }",
                 "});"
               ],
-              "_lastExecutionId": "9045f8a5-663d-49db-a079-014710c7cbe5"
+              "_lastExecutionId": "c12d8215-9de4-4742-bc68-561bcd5e03fb"
             }
           }
         ]
       },
       {
-        "id": "0ea64ea4-07a2-48eb-ba54-9e0da81b1612",
+        "id": "35166124-2e9c-41ac-af31-5e5c534b0eb9",
         "name": "Students - Get by ID - GET /students/1",
         "request": {
           "url": {
@@ -469,7 +469,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "64cea7dc-0aa5-41f4-b4fa-5f47ffcc4a5c",
+              "id": "5096ad93-84be-4ed5-beb3-26753eed1e6e",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -488,13 +488,13 @@
                 "  pm.expect(json).to.have.property(\"email\");",
                 "});"
               ],
-              "_lastExecutionId": "73ec07cd-70dd-4233-8653-2446888670ba"
+              "_lastExecutionId": "cb5e5651-6b9f-486f-b263-a731d9d59e6b"
             }
           }
         ]
       },
       {
-        "id": "5d32ee3d-acce-4042-b7dd-7172522aac16",
+        "id": "2daba3d4-79ed-466e-a402-5a6a6338bcaa",
         "name": "Students - Create (JWT) - POST /students",
         "request": {
           "url": {
@@ -528,7 +528,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "4fed1e2f-408d-4f26-8ed5-f4a90ad34ecc",
+              "id": "1d828663-f4e6-4911-9363-a174d356f809",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -547,13 +547,13 @@
                 "  pm.environment.set(\"createdStudentId\", json.student.id);",
                 "});"
               ],
-              "_lastExecutionId": "b9f5ea53-c85c-4037-ab25-615a07578014"
+              "_lastExecutionId": "eac2af30-6856-47be-99f1-c200e6a55525"
             }
           }
         ]
       },
       {
-        "id": "33481b95-3e06-4670-8007-67cfad315b61",
+        "id": "c6d0a5b3-d4d5-4aa7-9c75-178aeede8d7a",
         "name": "Students - Update (PUT, JWT) - PUT /students/{{createdStudentId}}",
         "request": {
           "url": {
@@ -588,7 +588,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "4b5a9324-6da0-4319-93aa-b836315bb245",
+              "id": "7b8ebd7e-7b6b-43e4-aa98-6b37afcd2988",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -602,13 +602,13 @@
                 "  pm.expect(json.student.age).to.eql(25);",
                 "});"
               ],
-              "_lastExecutionId": "9c556799-b2d5-4ed9-be49-6a69f8e84d04"
+              "_lastExecutionId": "f3d4a434-3d9e-43fc-a794-ac2d2e892f3c"
             }
           }
         ]
       },
       {
-        "id": "6f358ffd-914f-4a45-a643-672f245678a1",
+        "id": "61571fe9-57ab-4465-8f70-4363b13dbc46",
         "name": "Students - Partial Update (PATCH, JWT) - PATCH /students/{{createdStudentId}}",
         "request": {
           "url": {
@@ -643,7 +643,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "1c553490-5a8e-421b-95d3-a0402aabce2b",
+              "id": "079ad9a4-e264-498c-83e8-2591501c119a",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -656,13 +656,13 @@
                 "  pm.expect(json.student.age).to.eql(23);",
                 "});"
               ],
-              "_lastExecutionId": "d559eada-0e7c-4b3f-8cf1-4f02a1fb9e9f"
+              "_lastExecutionId": "9e474c43-6a69-4ee2-829e-4c5e87e8e768"
             }
           }
         ]
       },
       {
-        "id": "f2fd04ea-ffa8-46cc-9610-8e7b96f5bb33",
+        "id": "dc9eb029-0768-4d7e-b08e-eba138317f9b",
         "name": "Students - Delete (JWT) - DELETE /students/{{createdStudentId}}",
         "request": {
           "url": {
@@ -689,7 +689,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "5016414b-5dbb-468f-844d-c7d5846f7eb5",
+              "id": "027939b1-c8f9-4569-a58d-4dc94b5ac4da",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -708,13 +708,13 @@
                 "pm.environment.unset(\"createdStudentId\");",
                 "console.log(\"Unset environment variable: createdStudentId\");"
               ],
-              "_lastExecutionId": "c4bff2b4-8741-43b6-819a-c8eca61aa309"
+              "_lastExecutionId": "e459254f-a715-4ec6-9ee3-54d37745b013"
             }
           }
         ]
       },
       {
-        "id": "f89c5491-e27b-4c42-9dec-1f26cf6620bc",
+        "id": "542ea1b8-d4cb-4a91-b7d0-362ac40a4763",
         "name": "Students - Protected (Cookie) - GET /students/protected/cookie-only",
         "request": {
           "url": {
@@ -736,7 +736,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "bb53442b-ab86-4923-aa58-8988ddf4b16b",
+              "id": "45ce1dc8-b669-4fb3-a2db-1bffb49d5bd0",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200 (if session cookie present)\", function () {",
@@ -748,13 +748,13 @@
                 "  pm.expect(json).to.have.property(\"message\");",
                 "});"
               ],
-              "_lastExecutionId": "84519ef6-2bb4-4e4c-be63-8d10d241bb85"
+              "_lastExecutionId": "0919e9f0-5793-40b1-bb6a-c55b24d5d199"
             }
           }
         ]
       },
       {
-        "id": "c2e65fbf-d2c4-4c94-96a3-920827d67185",
+        "id": "c7c9ba7e-50b1-4dd4-b86f-671a20ba245e",
         "name": "Auth - Logout Cookie - POST /auth/logout-cookie",
         "request": {
           "url": {
@@ -775,7 +775,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "01c9cbc2-9985-41c0-83c9-a8938aa76e9e",
+              "id": "451085f5-4019-45ad-b74d-5195bee77d7e",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -787,13 +787,13 @@
                 "  pm.expect(json).to.have.property(\"message\");",
                 "});"
               ],
-              "_lastExecutionId": "fdb69bec-7c9b-458a-9156-a20cf29bbcf6"
+              "_lastExecutionId": "311a3dfe-7336-491b-a654-aa5c4f81ed2f"
             }
           }
         ]
       },
       {
-        "id": "1ce23031-8069-4295-8010-8d5f4a49967d",
+        "id": "988773a7-5a27-44e8-8bcd-7bd2ad5cef62",
         "name": "Students - Protected (JWT) - GET /students/protected/jwt-only",
         "request": {
           "url": {
@@ -821,7 +821,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "3c86ccac-0a18-45bc-99d9-b5313f868ee5",
+              "id": "c11b3f55-d758-43ac-9c8f-02820087332a",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 200\", function () {",
@@ -833,13 +833,13 @@
                 "  pm.expect(json).to.have.property(\"message\");",
                 "});"
               ],
-              "_lastExecutionId": "17de6afa-6ef9-45ca-b922-ce90b1e7afe4"
+              "_lastExecutionId": "e064eece-fe60-48f8-8393-30d53581811e"
             }
           }
         ]
       },
       {
-        "id": "3320c29d-a1ff-4156-9bbb-ac03a2d7e975",
+        "id": "93fd951a-605a-4e0c-998a-7ec05e0ba943",
         "name": "Error Case - Invalid ID - GET /students/abc",
         "request": {
           "url": {
@@ -860,7 +860,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "575860f7-f148-41b3-998d-99bb398585d0",
+              "id": "e75abf4b-d591-4b28-92bb-560a108b7564",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 400\", function () {",
@@ -872,13 +872,13 @@
                 "  pm.expect(json).to.have.property(\"error\");",
                 "});"
               ],
-              "_lastExecutionId": "5484e619-3d12-4303-814d-288ef5cab742"
+              "_lastExecutionId": "163c3bc5-f6ad-4924-a322-141dc35dffb3"
             }
           }
         ]
       },
       {
-        "id": "31f43f75-48e8-4fa8-8b5b-3849aead2e71",
+        "id": "d50d766c-8117-47f4-8099-2fb4530725df",
         "name": "Error Case - Not Found - GET /students/99999",
         "request": {
           "url": {
@@ -899,7 +899,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "9dc5cebc-79b5-4dc0-aebc-905fdc95ac74",
+              "id": "ad4298ae-98eb-4fcc-a341-c85534678232",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 404\", function () {",
@@ -911,13 +911,13 @@
                 "  pm.expect(json).to.have.property(\"error\");",
                 "});"
               ],
-              "_lastExecutionId": "3c072087-7056-43ad-9df0-7b5cb610adea"
+              "_lastExecutionId": "9bf6939d-1b78-48fd-ae96-416f02718c6a"
             }
           }
         ]
       },
       {
-        "id": "ff9e3a5e-2225-4030-8142-2612823ef2ad",
+        "id": "7d862c7e-6707-43af-b800-9336a91d9e70",
         "name": "Error Case - Create Student Missing Fields - POST /students",
         "request": {
           "url": {
@@ -951,7 +951,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "7d93301d-201e-43c3-8b76-5a1450f4ba00",
+              "id": "5b836380-270f-4e56-aff1-9dc08400604a",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 400\", function () {",
@@ -964,13 +964,13 @@
                 "  pm.expect(json.error).to.include(\"Validation failed\");",
                 "});"
               ],
-              "_lastExecutionId": "25fd23ff-a6c8-4626-af29-599a30494835"
+              "_lastExecutionId": "00dda9a7-8f75-47cb-bfc0-d74dfd266871"
             }
           }
         ]
       },
       {
-        "id": "c3b9f3ff-4a66-43ab-957c-0dbc143ac6f1",
+        "id": "f902861d-2ecd-4c84-a947-738e690b1408",
         "name": "Error Case - Protected JWT without token - GET /students/protected/jwt-only",
         "request": {
           "url": {
@@ -992,7 +992,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "5ae84c78-a1e1-47f4-be2f-5ee36628fbcb",
+              "id": "ada2a431-795b-495a-8b70-e4121f3ece03",
               "type": "text/javascript",
               "exec": [
                 "pm.test(\"Status code is 401\", function () {",
@@ -1004,13 +1004,13 @@
                 "  pm.expect(json).to.have.property(\"error\");",
                 "});"
               ],
-              "_lastExecutionId": "c887069d-b99d-4764-9d9b-b00f15fe1254"
+              "_lastExecutionId": "1c489ea1-b891-43cf-9ce4-d3ad573d4633"
             }
           }
         ]
       },
       {
-        "id": "9766cf6f-17d6-4f92-8932-a86c1bc6eda8",
+        "id": "505efaa7-0e76-47e7-8af7-20e4d1dd80cc",
         "name": "Error Case - Protected Cookie without session - GET /students/protected/cookie-only",
         "request": {
           "url": {
@@ -1032,7 +1032,7 @@
           {
             "listen": "test",
             "script": {
-              "id": "00dbf531-efa8-4a35-982c-98888a0ba2a2",
+              "id": "02a3dc7f-4888-4336-9b1f-c20c41571f1a",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -1072,13 +1072,13 @@
                 "  });",
                 "}"
               ],
-              "_lastExecutionId": "02cd720a-927f-4a02-a313-9c93fefd9de3"
+              "_lastExecutionId": "f5dfec01-eb5e-409d-a70e-3ce92e542fff"
             }
           },
           {
             "listen": "prerequest",
             "script": {
-              "id": "4348d02b-6c46-4db1-887d-7c444ec7788b",
+              "id": "54b81c08-2823-4f3c-9de3-fe0a6e521892",
               "type": "text/javascript",
               "packages": {},
               "exec": [
@@ -1092,7 +1092,7 @@
                 "  }",
                 "});"
               ],
-              "_lastExecutionId": "c3f83bd8-d442-408e-a57d-df46b45af056"
+              "_lastExecutionId": "d0e8dce1-5d21-4bd0-afb0-8dcfe1b38e4b"
             }
           }
         ]
@@ -1102,25 +1102,25 @@
       {
         "listen": "prerequest",
         "script": {
-          "id": "c54424d3-71cf-4acd-980a-36c0bf96812e",
+          "id": "20065f1d-32bb-4765-b0cd-357d49f2a14e",
           "type": "text/javascript",
           "packages": {},
           "exec": [
             ""
           ],
-          "_lastExecutionId": "d042f2f7-084c-4aa3-b1ab-daa72f95995d"
+          "_lastExecutionId": "fbf62e75-ce39-4f66-9fc9-353b538fd5e6"
         }
       },
       {
         "listen": "test",
         "script": {
-          "id": "6995229e-d3b8-4f08-add2-99300cb3a431",
+          "id": "09f9a338-218f-456c-9a37-43eea5d52f48",
           "type": "text/javascript",
           "packages": {},
           "exec": [
             ""
           ],
-          "_lastExecutionId": "03e2968b-0089-42a8-9055-38c47b1c38a8"
+          "_lastExecutionId": "add8dff2-2010-4e9e-8197-fc97819cebf7"
         }
       }
     ],
@@ -1162,7 +1162,7 @@
     "values": [
       {
         "type": "any",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4",
         "key": "jwtToken"
       },
       {
@@ -1173,7 +1173,7 @@
     ]
   },
   "globals": {
-    "id": "439c89cf-8b74-469d-9d9f-fe83a16576d9",
+    "id": "2e6c6246-e182-41b8-a03a-62ef162a4d71",
     "values": []
   },
   "run": {
@@ -1225,10 +1225,10 @@
       }
     },
     "timings": {
-      "responseAverage": 3.090909090909091,
+      "responseAverage": 3.3181818181818183,
       "responseMin": 1,
-      "responseMax": 19,
-      "responseSd": 3.7283812098927074,
+      "responseMax": 24,
+      "responseSd": 4.566541994236337,
       "dnsAverage": 0,
       "dnsMin": 0,
       "dnsMax": 0,
@@ -1237,8 +1237,8 @@
       "firstByteMin": 0,
       "firstByteMax": 0,
       "firstByteSd": 0,
-      "started": 1764666417857,
-      "completed": 1764666418241
+      "started": 1764673407036,
+      "completed": 1764673407458
     },
     "executions": [
       {
@@ -1251,11 +1251,11 @@
           "eof": false,
           "bof": true,
           "cr": false,
-          "ref": "a421aee9-5ac2-4582-bddb-37abd61f7f58",
-          "httpRequestId": "8224c4fa-f830-42fd-be4e-f6f5e15ddc4c"
+          "ref": "660b43e1-f2b3-421a-9c48-d027172d005d",
+          "httpRequestId": "1126818b-8feb-4a5d-a404-af464630f7b9"
         },
         "item": {
-          "id": "deb9edd3-0ed8-41bc-8ce2-d769b72f36bb",
+          "id": "a56cdf2b-61ce-4f1c-9774-a2e21ae0b836",
           "name": "Health - GET /health",
           "request": {
             "url": {
@@ -1275,7 +1275,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "860c0d5d-50ac-4c12-92bd-5cf1a4946103",
+                "id": "5dc160a3-c239-4243-b430-560e71bf139a",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -1299,7 +1299,7 @@
                   "  pm.expect(new Date(json.timestamp).toString()).not.to.equal(\"Invalid Date\");",
                   "});"
                 ],
-                "_lastExecutionId": "f5303e9c-cb35-4671-b80a-d0c7568da93c"
+                "_lastExecutionId": "9529b5ea-4af8-4874-9c03-680c598ac203"
               }
             }
           ]
@@ -1335,7 +1335,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "89b69889-5a70-4926-aa28-c6cb07f75621",
+              "value": "77afe3f2-1a89-4045-bd4e-2ce399fc4190",
               "system": true
             },
             {
@@ -1357,7 +1357,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "7db09d4a-aca8-4f0c-8211-2ac46c542602",
+          "id": "8a5b9e74-d0d4-412c-8a82-cff223d8ef0d",
           "status": "OK",
           "code": 200,
           "header": [
@@ -1383,11 +1383,11 @@
             },
             {
               "key": "ETag",
-              "value": "W/\"36-frhEgZr2fj3D/6CokP65Pbxczys\""
+              "value": "W/\"36-RLO9FZC9Bp7cpIHF6QwthgM6Wrw\""
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:57 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -1440,28 +1440,28 @@
               48,
               50,
               84,
-              48,
-              57,
+              49,
+              49,
               58,
               48,
-              54,
+              51,
               58,
-              53,
+              50,
               55,
               46,
-              56,
-              56,
-              56,
+              48,
+              55,
+              50,
               90,
               34,
               125
             ]
           },
           "cookie": [],
-          "responseTime": 19,
+          "responseTime": 24,
           "responseSize": 54
         },
-        "id": "deb9edd3-0ed8-41bc-8ce2-d769b72f36bb",
+        "id": "a56cdf2b-61ce-4f1c-9774-a2e21ae0b836",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -1483,15 +1483,15 @@
       },
       {
         "cursor": {
-          "ref": "f14d5ba8-2837-412c-a0dd-d9fc8ade704a",
+          "ref": "9d27d589-680a-4967-92e2-0a8389b0974c",
           "length": 22,
           "cycles": 1,
           "position": 1,
           "iteration": 0,
-          "httpRequestId": "1534372b-e4ae-474e-b4c2-eacfae27bb3f"
+          "httpRequestId": "880ddc1b-f382-446f-a12e-7f8810d0d5b1"
         },
         "item": {
-          "id": "0869fd22-67ad-4dba-bea8-582a9b30b9f7",
+          "id": "4dd59b87-c628-4821-be26-581c4743f8d6",
           "name": "Test - Headers - GET /test/headers",
           "request": {
             "url": {
@@ -1518,7 +1518,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "0f6c9ea5-3b96-4bec-b539-fc0185e695f8",
+                "id": "8c3e5231-7ddc-4b01-9f90-f3cb3f03903a",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -1537,7 +1537,7 @@
                   "  pm.expect(json.headers[\"x-custom-header\"]).to.eql(sentHeader);",
                   "});"
                 ],
-                "_lastExecutionId": "79d14313-8907-48d5-8dee-74b64334c089"
+                "_lastExecutionId": "eba9a8f5-46b0-4361-96ff-ec6af33974c9"
               }
             }
           ]
@@ -1578,7 +1578,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "2b62df11-443d-41e7-b69c-c3789f42a653",
+              "value": "3e12cf33-b84b-49fd-abeb-34e3ce780b3c",
               "system": true
             },
             {
@@ -1600,7 +1600,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "20e9e698-85b4-4f64-8ce6-48a7a12aa29f",
+          "id": "c4d51754-f0b3-40ab-9cf9-3c25e31a4ecc",
           "status": "OK",
           "code": 200,
           "header": [
@@ -1626,11 +1626,11 @@
             },
             {
               "key": "ETag",
-              "value": "W/\"135-RRGT0R7zJofPnLeRQGbM/C9EM8Y\""
+              "value": "W/\"135-jEORykCml4ofSlmmqWikUcg2W3g\""
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:57 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -1826,42 +1826,42 @@
               34,
               58,
               34,
-              50,
-              98,
-              54,
-              50,
-              100,
-              102,
-              49,
-              49,
-              45,
-              52,
-              52,
               51,
-              100,
+              101,
+              49,
+              50,
+              99,
+              102,
+              51,
+              51,
+              45,
+              98,
+              56,
+              52,
+              98,
               45,
               52,
-              49,
+              57,
+              102,
+              100,
+              45,
+              97,
+              98,
+              101,
+              98,
+              45,
+              51,
+              52,
+              101,
+              51,
+              99,
               101,
               55,
-              45,
-              98,
-              54,
-              57,
-              99,
-              45,
-              99,
-              51,
-              55,
               56,
-              57,
-              102,
-              52,
-              50,
-              97,
-              54,
-              53,
+              48,
+              98,
               51,
+              99,
               34,
               44,
               34,
@@ -1959,7 +1959,7 @@
           "responseTime": 2,
           "responseSize": 309
         },
-        "id": "0869fd22-67ad-4dba-bea8-582a9b30b9f7",
+        "id": "4dd59b87-c628-4821-be26-581c4743f8d6",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -1977,15 +1977,15 @@
       },
       {
         "cursor": {
-          "ref": "34158c32-8a16-4fbd-bc7b-afb57753c7b9",
+          "ref": "fa0dd001-2e2c-4b24-8b8f-1a98dc2e647d",
           "length": 22,
           "cycles": 1,
           "position": 2,
           "iteration": 0,
-          "httpRequestId": "5c630197-300d-47b8-a81f-d3f7d7f03b4c"
+          "httpRequestId": "29a54de1-0d00-4917-ac08-c79897682cb9"
         },
         "item": {
-          "id": "0015e1c3-5ca8-45e4-8777-ddc9e8510442",
+          "id": "91bf60e8-b7f3-4f50-a429-83bc2006a028",
           "name": "Test - Set Cookie - GET /test/set-cookie",
           "request": {
             "url": {
@@ -2006,7 +2006,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "5ec1112b-ab2b-445f-8789-54424d05397f",
+                "id": "b4f36412-4d4c-4bbd-8394-1c9fb120ee1c",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -2021,7 +2021,7 @@
                   "  pm.expect(hasDemoCookie).to.be.true;",
                   "});"
                 ],
-                "_lastExecutionId": "74eb4527-172c-46b0-a153-8595529a1d52"
+                "_lastExecutionId": "0c69e86e-d10c-4266-885f-7837190bf219"
               }
             }
           ]
@@ -2058,7 +2058,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "f552b259-492c-420e-add8-e23eff36f71c",
+              "value": "18a74c8e-5d79-4305-9ba9-c86d1ba30256",
               "system": true
             },
             {
@@ -2080,7 +2080,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "682c5fb9-9f44-4526-b704-275837f953fc",
+          "id": "7bfd07f3-0d20-4de2-9ab8-c6e5838b8a5a",
           "status": "OK",
           "code": 200,
           "header": [
@@ -2114,7 +2114,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:57 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -2191,7 +2191,7 @@
           "responseTime": 3,
           "responseSize": 57
         },
-        "id": "0015e1c3-5ca8-45e4-8777-ddc9e8510442",
+        "id": "91bf60e8-b7f3-4f50-a429-83bc2006a028",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -2205,15 +2205,15 @@
       },
       {
         "cursor": {
-          "ref": "b17fede7-55e0-4b0d-ad11-44fe80a32ce1",
+          "ref": "4e31fcd0-4383-4f19-9e3b-7e90fe6ca0e1",
           "length": 22,
           "cycles": 1,
           "position": 3,
           "iteration": 0,
-          "httpRequestId": "46ba1dd9-3bb6-4371-bcd5-f3fa04c696db"
+          "httpRequestId": "6c02a83e-4971-4b21-9d32-e984e4612bfd"
         },
         "item": {
-          "id": "ee06f2a8-53f9-4006-9a61-b133f1fc43f5",
+          "id": "e9bb93b6-0ed3-47f7-8188-7520d7bdcc08",
           "name": "Test - Get Cookies - GET /test/get-cookies",
           "request": {
             "url": {
@@ -2234,7 +2234,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "50362a70-df46-415e-9fd2-0a6134a2313a",
+                "id": "6dd44d4d-a057-45e6-b565-f950b2ec8bd3",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -2249,7 +2249,7 @@
                   "  pm.expect(json.cookies.demoCookie).to.eql(\"hello-from-server\");",
                   "});"
                 ],
-                "_lastExecutionId": "fe2346c5-59fe-45a7-a351-6bc5b13e9efe"
+                "_lastExecutionId": "f8007a22-8b5c-4b24-bc3b-984d03e53f52"
               }
             }
           ]
@@ -2286,7 +2286,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "fc3921fe-449c-46e6-a2ac-da1b4ababf7c",
+              "value": "24627b36-ddbb-40ba-a30a-c0323892a386",
               "system": true
             },
             {
@@ -2313,7 +2313,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "24b53825-6524-450b-b940-8113ae947d75",
+          "id": "602ee0cf-9cfa-4f38-b3c3-f30f376dbe06",
           "status": "OK",
           "code": 200,
           "header": [
@@ -2343,7 +2343,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:57 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -2409,7 +2409,7 @@
           "responseTime": 2,
           "responseSize": 46
         },
-        "id": "ee06f2a8-53f9-4006-9a61-b133f1fc43f5",
+        "id": "e9bb93b6-0ed3-47f7-8188-7520d7bdcc08",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -2423,15 +2423,15 @@
       },
       {
         "cursor": {
-          "ref": "17eb6689-a7cb-42d5-8482-9749a72c873c",
+          "ref": "72f2fa63-031a-42a9-81cc-a24754501f0b",
           "length": 22,
           "cycles": 1,
           "position": 4,
           "iteration": 0,
-          "httpRequestId": "4e38c4f2-f5a6-4412-96b5-7bb499762b8f"
+          "httpRequestId": "fe056d1d-656e-4453-b1bc-fb324d4986ce"
         },
         "item": {
-          "id": "dd3469ec-283c-480e-b22f-a15407ae1d9f",
+          "id": "2192b15e-d60e-46a3-8fb2-2adbbdd4a14b",
           "name": "Auth - Login JWT - POST /auth/login-jwt",
           "request": {
             "url": {
@@ -2462,7 +2462,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "8bdb292c-17cd-42e9-9a63-7633dff326ae",
+                "id": "351ed3cf-c3c6-4686-b955-a2045939fb63",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -2480,7 +2480,7 @@
                   "  pm.environment.set(\"jwtToken\", json.token);",
                   "});"
                 ],
-                "_lastExecutionId": "b4121caa-075f-4db8-b286-b2e5f2f92c6a"
+                "_lastExecutionId": "b83be014-c03c-4d4d-8a16-12462d5af2b9"
               }
             }
           ]
@@ -2521,7 +2521,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "6c1bcc2a-56af-486f-a704-d2ff3b98e13a",
+              "value": "e4f43611-9acd-4e20-89f0-b8e523a64e4d",
               "system": true
             },
             {
@@ -2557,7 +2557,7 @@
           }
         },
         "response": {
-          "id": "e1f349e6-c2ce-4823-bbbb-b89ba4d380b0",
+          "id": "8b985ddc-1077-4033-a693-7e294e87c78c",
           "status": "OK",
           "code": 200,
           "header": [
@@ -2583,11 +2583,11 @@
             },
             {
               "key": "ETag",
-              "value": "W/\"175-vq2GTc14pEV3tP3i0Gqh6aPPbgI\""
+              "value": "W/\"175-aIjuXm6oc7/qNMUeA1M88MaPYn4\""
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:57 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -2795,11 +2795,11 @@
               81,
               50,
               78,
-              106,
-              89,
+              122,
+              77,
               48,
               77,
-              84,
+              68,
               99,
               115,
               73,
@@ -2818,57 +2818,57 @@
               68,
               89,
               51,
-              77,
-              68,
+              78,
+              122,
               65,
-              120,
+              119,
               78,
               51,
               48,
               46,
+              101,
+              45,
+              88,
+              76,
+              104,
+              67,
               95,
-              71,
-              68,
-              100,
-              56,
-              74,
-              80,
-              65,
-              50,
+              67,
+              122,
+              73,
+              102,
+              115,
+              82,
+              76,
               51,
-              87,
-              98,
-              121,
-              81,
+              51,
+              56,
+              114,
+              102,
+              86,
+              69,
+              111,
+              78,
+              103,
+              77,
+              55,
+              48,
+              53,
               54,
               110,
-              99,
-              98,
-              98,
-              51,
-              48,
-              56,
-              120,
-              56,
-              53,
-              116,
-              104,
-              109,
+              85,
+              114,
+              110,
+              117,
+              49,
               74,
-              80,
-              84,
-              101,
+              87,
+              56,
+              89,
+              118,
               69,
-              98,
-              55,
-              103,
-              109,
-              116,
-              50,
-              112,
-              86,
-              54,
-              103,
+              71,
+              52,
               34,
               44,
               34,
@@ -2977,10 +2977,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 8,
+          "responseTime": 4,
           "responseSize": 373
         },
-        "id": "dd3469ec-283c-480e-b22f-a15407ae1d9f",
+        "id": "2192b15e-d60e-46a3-8fb2-2adbbdd4a14b",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -2998,15 +2998,15 @@
       },
       {
         "cursor": {
-          "ref": "07b4656f-f61b-4d86-9c2c-0ba4e85ec822",
+          "ref": "16da77f7-9fc1-48d6-a212-44163b56a8ed",
           "length": 22,
           "cycles": 1,
           "position": 5,
           "iteration": 0,
-          "httpRequestId": "a1b188a6-48c9-46a2-941f-8edd68ebda39"
+          "httpRequestId": "873391ec-f607-4ded-86eb-b9045eab7b34"
         },
         "item": {
-          "id": "938e94e7-9570-4e5e-9041-accabd279406",
+          "id": "a536195c-6ea9-455d-b208-052e041b4a82",
           "name": "Auth - Me (JWT protected) - GET /auth/me",
           "request": {
             "url": {
@@ -3033,7 +3033,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "f253f982-411a-4fa1-b56f-8853b3f33fe7",
+                "id": "1aa13dcf-bef3-4eaf-b14e-b541d0e5ba8d",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status is 200\", function () {",
@@ -3052,7 +3052,7 @@
                   "  pm.expect(json.message).to.include(\"authenticated with JWT\");",
                   "});"
                 ],
-                "_lastExecutionId": "a1502f8b-cb28-4edb-a05f-9d467b24ad45"
+                "_lastExecutionId": "306792ed-02d2-4fc8-b2d1-226b08c8524a"
               }
             }
           ]
@@ -3074,7 +3074,7 @@
           "header": [
             {
               "key": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"
             },
             {
               "key": "User-Agent",
@@ -3093,7 +3093,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "4ee7c098-5cbd-4baa-ab4c-757fe1557f1c",
+              "value": "612997e6-405e-490b-b677-5428f0428125",
               "system": true
             },
             {
@@ -3120,7 +3120,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "5d6bcef9-4581-4d43-8f2f-c044c0bdc6b6",
+          "id": "96cda2da-9e2a-49fc-ab13-020b4260b486",
           "status": "OK",
           "code": 200,
           "header": [
@@ -3146,11 +3146,11 @@
             },
             {
               "key": "ETag",
-              "value": "W/\"85-zKNutmxNQGGZyI3Rapq58jV4nXE\""
+              "value": "W/\"85-ju1+nxLrKmUI9K6/gskgBw9N9/c\""
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:57 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -3273,10 +3273,10 @@
               54,
               52,
               54,
-              54,
-              54,
+              55,
+              51,
               52,
-              49,
+              48,
               55,
               44,
               34,
@@ -3291,9 +3291,9 @@
               52,
               54,
               55,
+              55,
               48,
               48,
-              49,
               55,
               125,
               125
@@ -3303,7 +3303,7 @@
           "responseTime": 3,
           "responseSize": 133
         },
-        "id": "938e94e7-9570-4e5e-9041-accabd279406",
+        "id": "a536195c-6ea9-455d-b208-052e041b4a82",
         "assertions": [
           {
             "assertion": "Status is 200",
@@ -3321,15 +3321,15 @@
       },
       {
         "cursor": {
-          "ref": "e9331659-8911-4169-8d25-e8607c039b33",
+          "ref": "ae199d48-7601-4691-9935-fcc4ce951b86",
           "length": 22,
           "cycles": 1,
           "position": 6,
           "iteration": 0,
-          "httpRequestId": "45f1db38-5872-427b-b40f-d4a099c595ed"
+          "httpRequestId": "8e36802c-5068-4a04-a931-f6528fc43940"
         },
         "item": {
-          "id": "95b6d253-b653-4dcb-90f1-a4ab185b9239",
+          "id": "35c32c19-4f55-47ad-bc06-cd085f603d47",
           "name": "Auth - Login Cookie - POST /auth/login-cookie",
           "request": {
             "url": {
@@ -3360,7 +3360,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "01319b1c-015d-47d1-9217-5c798197d74a",
+                "id": "5f5e21c5-8efc-4269-9edb-3b60f5956ca4",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -3374,7 +3374,7 @@
                   "  pm.expect(hasSessionCookie).to.be.true;",
                   "});"
                 ],
-                "_lastExecutionId": "41c4c5b6-02d0-4006-a0ce-250286eb2c48"
+                "_lastExecutionId": "4c4c832e-2c17-4d74-9591-dd7ecd51a78e"
               }
             }
           ]
@@ -3415,7 +3415,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "ccfacbf8-695f-4b5b-a213-5bd9a7db2284",
+              "value": "af7d1aef-e1c0-43cb-b99c-c0368a2c7115",
               "system": true
             },
             {
@@ -3451,7 +3451,7 @@
           }
         },
         "response": {
-          "id": "42a7143c-1d50-4d52-b283-f5de6b6164a2",
+          "id": "0a1a6623-0dfc-46db-a4a9-2e30fc47135c",
           "status": "OK",
           "code": 200,
           "header": [
@@ -3485,7 +3485,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -3644,7 +3644,7 @@
           "responseTime": 2,
           "responseSize": 139
         },
-        "id": "95b6d253-b653-4dcb-90f1-a4ab185b9239",
+        "id": "35c32c19-4f55-47ad-bc06-cd085f603d47",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -3658,15 +3658,15 @@
       },
       {
         "cursor": {
-          "ref": "afdf2e42-de49-4fe3-8deb-c83d9115f36b",
+          "ref": "e47ef4f0-467e-42a4-aac4-0143624eff0e",
           "length": 22,
           "cycles": 1,
           "position": 7,
           "iteration": 0,
-          "httpRequestId": "01c67c30-a771-40b9-aaee-69bb02f1b51c"
+          "httpRequestId": "c00b597e-6850-4d7c-8b8e-e140ac39184b"
         },
         "item": {
-          "id": "a4de859f-64d7-4032-b44f-808368ac0802",
+          "id": "68562169-8f33-45cd-8f75-069886dc85d0",
           "name": "Auth - Me Cookie - GET /auth/me-cookie",
           "request": {
             "url": {
@@ -3687,7 +3687,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "5db39147-3733-47ee-aa4f-a1e4f3f377fa",
+                "id": "cdb23e3a-c189-4759-97cf-8c739e051a1c",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -3705,7 +3705,7 @@
                   "  pm.expect(json.message).to.include(\"authenticated with a cookie\");",
                   "});"
                 ],
-                "_lastExecutionId": "21a8dae1-cafc-4507-a6ec-f227679584ea"
+                "_lastExecutionId": "73213e19-f012-49ec-9244-afe833dc9b16"
               }
             }
           ]
@@ -3742,7 +3742,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "178d3c78-63a4-409b-b7fb-17eac5497ae0",
+              "value": "9db53b07-89a9-4181-a459-989da1076e5f",
               "system": true
             },
             {
@@ -3769,7 +3769,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "8c236864-4530-4b2b-9125-15560de5c7a9",
+          "id": "f6a616a8-5811-455f-aed8-21b10ed6adc1",
           "status": "OK",
           "code": 200,
           "header": [
@@ -3799,7 +3799,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -3925,7 +3925,7 @@
           "responseTime": 2,
           "responseSize": 106
         },
-        "id": "a4de859f-64d7-4032-b44f-808368ac0802",
+        "id": "68562169-8f33-45cd-8f75-069886dc85d0",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -3943,15 +3943,15 @@
       },
       {
         "cursor": {
-          "ref": "68ff5aac-b34b-43d8-bff8-957018695c9c",
+          "ref": "777872b4-a274-459b-b2d4-fc380894bb81",
           "length": 22,
           "cycles": 1,
           "position": 8,
           "iteration": 0,
-          "httpRequestId": "508e8259-b3a5-4ed0-ad62-dc6b856fb297"
+          "httpRequestId": "375cca80-f1de-44c3-b4a2-730e8e873d81"
         },
         "item": {
-          "id": "3324c73d-e731-47a7-ba09-d948281fe75b",
+          "id": "6fbddf01-8dec-4850-95f8-3dafc1780019",
           "name": "Students - List All - GET /students",
           "request": {
             "url": {
@@ -3971,7 +3971,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "412178c7-8625-42d2-b557-1c5a11875287",
+                "id": "12ce7945-c7b5-4bfc-8803-2704a9870251",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -3997,7 +3997,7 @@
                   "  }",
                   "});"
                 ],
-                "_lastExecutionId": "9045f8a5-663d-49db-a079-014710c7cbe5"
+                "_lastExecutionId": "c12d8215-9de4-4742-bc68-561bcd5e03fb"
               }
             }
           ]
@@ -4033,7 +4033,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "2cb85664-a290-4963-bd55-934327905edd",
+              "value": "ea0f5ecd-e5f7-4358-9740-e6f4f5e7ed99",
               "system": true
             },
             {
@@ -4060,7 +4060,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "80c70123-e135-4a09-b54a-2cfcac41b604",
+          "id": "8ad2656f-abf5-49df-980d-db88c85b706d",
           "status": "OK",
           "code": 200,
           "header": [
@@ -4090,7 +4090,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -4384,10 +4384,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 3,
+          "responseTime": 2,
           "responseSize": 277
         },
-        "id": "3324c73d-e731-47a7-ba09-d948281fe75b",
+        "id": "6fbddf01-8dec-4850-95f8-3dafc1780019",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -4405,15 +4405,15 @@
       },
       {
         "cursor": {
-          "ref": "da70aa78-9aed-4f3c-808f-7aa00b97931e",
+          "ref": "192867f4-eefa-41e3-955a-f845b39e28db",
           "length": 22,
           "cycles": 1,
           "position": 9,
           "iteration": 0,
-          "httpRequestId": "104dd544-3de3-4bbc-a1f2-1f636a787cec"
+          "httpRequestId": "ddeaf7e9-b532-4c9b-93c8-c817b143f613"
         },
         "item": {
-          "id": "0ea64ea4-07a2-48eb-ba54-9e0da81b1612",
+          "id": "35166124-2e9c-41ac-af31-5e5c534b0eb9",
           "name": "Students - Get by ID - GET /students/1",
           "request": {
             "url": {
@@ -4434,7 +4434,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "64cea7dc-0aa5-41f4-b4fa-5f47ffcc4a5c",
+                "id": "5096ad93-84be-4ed5-beb3-26753eed1e6e",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -4453,7 +4453,7 @@
                   "  pm.expect(json).to.have.property(\"email\");",
                   "});"
                 ],
-                "_lastExecutionId": "73ec07cd-70dd-4233-8653-2446888670ba"
+                "_lastExecutionId": "cb5e5651-6b9f-486f-b263-a731d9d59e6b"
               }
             }
           ]
@@ -4490,7 +4490,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "3ea31f89-7bbc-4a9b-90b5-b6fd4eb8f2ad",
+              "value": "9d3d3e34-ce57-47ae-ad01-ee455052a4db",
               "system": true
             },
             {
@@ -4517,7 +4517,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "5b580a6c-2e63-432b-8d2f-498860ceabd2",
+          "id": "55e1dd6d-a048-4af5-8277-be934572170c",
           "status": "OK",
           "code": 200,
           "header": [
@@ -4547,7 +4547,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -4656,7 +4656,7 @@
           "responseTime": 2,
           "responseSize": 89
         },
-        "id": "0ea64ea4-07a2-48eb-ba54-9e0da81b1612",
+        "id": "35166124-2e9c-41ac-af31-5e5c534b0eb9",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -4674,15 +4674,15 @@
       },
       {
         "cursor": {
-          "ref": "d886cdfa-5ea5-4e59-bd0b-64856452d830",
+          "ref": "61e05cc9-4aaa-4c77-ae6d-475e7276ad6d",
           "length": 22,
           "cycles": 1,
           "position": 10,
           "iteration": 0,
-          "httpRequestId": "802ef63d-5d93-4e23-8438-74bca7684151"
+          "httpRequestId": "3517c4fa-c547-4dce-9d29-8ed2d745ae7c"
         },
         "item": {
-          "id": "5d32ee3d-acce-4042-b7dd-7172522aac16",
+          "id": "2daba3d4-79ed-466e-a402-5a6a6338bcaa",
           "name": "Students - Create (JWT) - POST /students",
           "request": {
             "url": {
@@ -4716,7 +4716,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "4fed1e2f-408d-4f26-8ed5-f4a90ad34ecc",
+                "id": "1d828663-f4e6-4911-9363-a174d356f809",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -4735,7 +4735,7 @@
                   "  pm.environment.set(\"createdStudentId\", json.student.id);",
                   "});"
                 ],
-                "_lastExecutionId": "b9f5ea53-c85c-4037-ab25-615a07578014"
+                "_lastExecutionId": "eac2af30-6856-47be-99f1-c200e6a55525"
               }
             }
           ]
@@ -4756,7 +4756,7 @@
           "header": [
             {
               "key": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"
             },
             {
               "key": "Content-Type",
@@ -4779,7 +4779,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "aae54d65-f759-4375-9ec6-7599c8089f87",
+              "value": "345bebea-16f9-4e34-8fa6-5a2af7084689",
               "system": true
             },
             {
@@ -4815,7 +4815,7 @@
           }
         },
         "response": {
-          "id": "626623e0-9036-4760-82a7-32fc2a018c53",
+          "id": "fe26c7a5-10c8-457d-96be-46fbd5385b73",
           "status": "Created",
           "code": 201,
           "header": [
@@ -4845,7 +4845,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -5001,10 +5001,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 2,
+          "responseTime": 4,
           "responseSize": 139
         },
-        "id": "5d32ee3d-acce-4042-b7dd-7172522aac16",
+        "id": "2daba3d4-79ed-466e-a402-5a6a6338bcaa",
         "assertions": [
           {
             "assertion": "Status code is 201",
@@ -5022,15 +5022,15 @@
       },
       {
         "cursor": {
-          "ref": "a6182fb1-22c2-402c-a538-0f470f6151ff",
+          "ref": "49a7cc1c-071e-45b9-aeb0-d090e2ae6da5",
           "length": 22,
           "cycles": 1,
           "position": 11,
           "iteration": 0,
-          "httpRequestId": "d617d68b-dbaa-4dcb-9810-d41d52497040"
+          "httpRequestId": "5dcd017c-bfd2-4557-974a-cc1c498273e0"
         },
         "item": {
-          "id": "33481b95-3e06-4670-8007-67cfad315b61",
+          "id": "c6d0a5b3-d4d5-4aa7-9c75-178aeede8d7a",
           "name": "Students - Update (PUT, JWT) - PUT /students/{{createdStudentId}}",
           "request": {
             "url": {
@@ -5065,7 +5065,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "4b5a9324-6da0-4319-93aa-b836315bb245",
+                "id": "7b8ebd7e-7b6b-43e4-aa98-6b37afcd2988",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -5079,7 +5079,7 @@
                   "  pm.expect(json.student.age).to.eql(25);",
                   "});"
                 ],
-                "_lastExecutionId": "9c556799-b2d5-4ed9-be49-6a69f8e84d04"
+                "_lastExecutionId": "f3d4a434-3d9e-43fc-a794-ac2d2e892f3c"
               }
             }
           ]
@@ -5101,7 +5101,7 @@
           "header": [
             {
               "key": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"
             },
             {
               "key": "Content-Type",
@@ -5124,7 +5124,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "77c77b8c-4113-42d4-acba-c9f178bfcd1c",
+              "value": "76731001-c4cf-4024-b147-c439cb5533a4",
               "system": true
             },
             {
@@ -5160,7 +5160,7 @@
           }
         },
         "response": {
-          "id": "3be35d70-06f2-42a1-96ff-4c328d4de7de",
+          "id": "86d3a238-b349-423e-82a3-047f928cb69d",
           "status": "OK",
           "code": 200,
           "header": [
@@ -5190,7 +5190,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -5352,10 +5352,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 3,
+          "responseTime": 2,
           "responseSize": 145
         },
-        "id": "33481b95-3e06-4670-8007-67cfad315b61",
+        "id": "c6d0a5b3-d4d5-4aa7-9c75-178aeede8d7a",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -5369,15 +5369,15 @@
       },
       {
         "cursor": {
-          "ref": "0655b40e-7f54-4626-a142-d51ccb79e532",
+          "ref": "782c65c7-5a24-4635-8ebd-d60e3962154c",
           "length": 22,
           "cycles": 1,
           "position": 12,
           "iteration": 0,
-          "httpRequestId": "322dd456-17d9-4cf3-bb2f-ee4a59501ed8"
+          "httpRequestId": "9fd2dff6-cb1a-4238-9afe-8897cb2c08ce"
         },
         "item": {
-          "id": "6f358ffd-914f-4a45-a643-672f245678a1",
+          "id": "61571fe9-57ab-4465-8f70-4363b13dbc46",
           "name": "Students - Partial Update (PATCH, JWT) - PATCH /students/{{createdStudentId}}",
           "request": {
             "url": {
@@ -5412,7 +5412,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "1c553490-5a8e-421b-95d3-a0402aabce2b",
+                "id": "079ad9a4-e264-498c-83e8-2591501c119a",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -5425,7 +5425,7 @@
                   "  pm.expect(json.student.age).to.eql(23);",
                   "});"
                 ],
-                "_lastExecutionId": "d559eada-0e7c-4b3f-8cf1-4f02a1fb9e9f"
+                "_lastExecutionId": "9e474c43-6a69-4ee2-829e-4c5e87e8e768"
               }
             }
           ]
@@ -5447,7 +5447,7 @@
           "header": [
             {
               "key": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"
             },
             {
               "key": "Content-Type",
@@ -5470,7 +5470,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "e5aa3259-324c-473e-be28-0f7f871e3f4c",
+              "value": "ec1302b2-32a2-4042-8346-d88722cbaea2",
               "system": true
             },
             {
@@ -5506,7 +5506,7 @@
           }
         },
         "response": {
-          "id": "e1a1903f-a16d-43b0-87cc-ee9ada6bfeff",
+          "id": "0fd78492-2ffd-499d-b1dc-de381c921f12",
           "status": "OK",
           "code": 200,
           "header": [
@@ -5536,7 +5536,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -5708,10 +5708,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 2,
+          "responseTime": 3,
           "responseSize": 155
         },
-        "id": "6f358ffd-914f-4a45-a643-672f245678a1",
+        "id": "61571fe9-57ab-4465-8f70-4363b13dbc46",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -5725,15 +5725,15 @@
       },
       {
         "cursor": {
-          "ref": "b2f931b3-509b-437d-8212-21ba67e225bd",
+          "ref": "2831b44d-df68-48aa-b2b8-b6970b82f250",
           "length": 22,
           "cycles": 1,
           "position": 13,
           "iteration": 0,
-          "httpRequestId": "4b7f459b-f6d3-45dd-8dc9-91afab75c281"
+          "httpRequestId": "bb6e56fc-46ac-42c2-a581-6a8cf3097f72"
         },
         "item": {
-          "id": "f2fd04ea-ffa8-46cc-9610-8e7b96f5bb33",
+          "id": "dc9eb029-0768-4d7e-b08e-eba138317f9b",
           "name": "Students - Delete (JWT) - DELETE /students/{{createdStudentId}}",
           "request": {
             "url": {
@@ -5760,7 +5760,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "5016414b-5dbb-468f-844d-c7d5846f7eb5",
+                "id": "027939b1-c8f9-4569-a58d-4dc94b5ac4da",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -5779,7 +5779,7 @@
                   "pm.environment.unset(\"createdStudentId\");",
                   "console.log(\"Unset environment variable: createdStudentId\");"
                 ],
-                "_lastExecutionId": "c4bff2b4-8741-43b6-819a-c8eca61aa309"
+                "_lastExecutionId": "e459254f-a715-4ec6-9ee3-54d37745b013"
               }
             }
           ]
@@ -5801,7 +5801,7 @@
           "header": [
             {
               "key": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"
             },
             {
               "key": "User-Agent",
@@ -5820,7 +5820,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "81f01fe3-6713-4bfe-aac6-ae2f3b879763",
+              "value": "5df3238e-06e9-45f7-ae49-15e482a71f47",
               "system": true
             },
             {
@@ -5847,7 +5847,7 @@
           "method": "DELETE"
         },
         "response": {
-          "id": "97e0c0d9-82c7-4290-ba04-b6a560d58e2d",
+          "id": "1cf05f15-e101-4144-8eef-3b3b2823f210",
           "status": "OK",
           "code": 200,
           "header": [
@@ -5877,7 +5877,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -6042,7 +6042,7 @@
           "responseTime": 2,
           "responseSize": 145
         },
-        "id": "f2fd04ea-ffa8-46cc-9610-8e7b96f5bb33",
+        "id": "dc9eb029-0768-4d7e-b08e-eba138317f9b",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -6056,15 +6056,15 @@
       },
       {
         "cursor": {
-          "ref": "92e5cf70-3908-4c15-b786-2f8dd6b109b8",
+          "ref": "4f98ffd5-be07-40fe-8ae9-0e4553fa503b",
           "length": 22,
           "cycles": 1,
           "position": 14,
           "iteration": 0,
-          "httpRequestId": "21f88c5a-e295-41b4-be04-5d4b56f04c1e"
+          "httpRequestId": "5ef098d7-6832-4eb7-a9c5-065867393bf5"
         },
         "item": {
-          "id": "f89c5491-e27b-4c42-9dec-1f26cf6620bc",
+          "id": "542ea1b8-d4cb-4a91-b7d0-362ac40a4763",
           "name": "Students - Protected (Cookie) - GET /students/protected/cookie-only",
           "request": {
             "url": {
@@ -6086,7 +6086,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "bb53442b-ab86-4923-aa58-8988ddf4b16b",
+                "id": "45ce1dc8-b669-4fb3-a2db-1bffb49d5bd0",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200 (if session cookie present)\", function () {",
@@ -6098,7 +6098,7 @@
                   "  pm.expect(json).to.have.property(\"message\");",
                   "});"
                 ],
-                "_lastExecutionId": "84519ef6-2bb4-4e4c-be63-8d10d241bb85"
+                "_lastExecutionId": "0919e9f0-5793-40b1-bb6a-c55b24d5d199"
               }
             }
           ]
@@ -6136,7 +6136,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "ce4c0e89-8d84-45cb-9f46-01186fad7e9e",
+              "value": "edc92e4d-ecfa-40fe-95cf-5ecaf0e5e719",
               "system": true
             },
             {
@@ -6163,7 +6163,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "f503037b-969e-4cb5-8d5e-1c29eb7efd91",
+          "id": "91c05e82-e139-433b-8631-341c7078c003",
           "status": "OK",
           "code": 200,
           "header": [
@@ -6193,7 +6193,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -6337,7 +6337,7 @@
           "responseTime": 2,
           "responseSize": 124
         },
-        "id": "f89c5491-e27b-4c42-9dec-1f26cf6620bc",
+        "id": "542ea1b8-d4cb-4a91-b7d0-362ac40a4763",
         "assertions": [
           {
             "assertion": "Status code is 200 (if session cookie present)",
@@ -6351,15 +6351,15 @@
       },
       {
         "cursor": {
-          "ref": "75543886-8ac4-4dfb-85dd-591dcb7c8310",
+          "ref": "be1da287-3188-4896-aba2-b788f06a7e8b",
           "length": 22,
           "cycles": 1,
           "position": 15,
           "iteration": 0,
-          "httpRequestId": "2b9f885e-05ec-4323-b48f-7205cc1b21b2"
+          "httpRequestId": "83ac7771-66fa-4e7a-8838-2bef0d16534b"
         },
         "item": {
-          "id": "c2e65fbf-d2c4-4c94-96a3-920827d67185",
+          "id": "c7c9ba7e-50b1-4dd4-b86f-671a20ba245e",
           "name": "Auth - Logout Cookie - POST /auth/logout-cookie",
           "request": {
             "url": {
@@ -6380,7 +6380,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "01c9cbc2-9985-41c0-83c9-a8938aa76e9e",
+                "id": "451085f5-4019-45ad-b74d-5195bee77d7e",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -6392,7 +6392,7 @@
                   "  pm.expect(json).to.have.property(\"message\");",
                   "});"
                 ],
-                "_lastExecutionId": "fdb69bec-7c9b-458a-9156-a20cf29bbcf6"
+                "_lastExecutionId": "311a3dfe-7336-491b-a654-aa5c4f81ed2f"
               }
             }
           ]
@@ -6429,7 +6429,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "e2127d62-4e6d-45cc-8969-abf7b74bebf3",
+              "value": "a10f47b7-0a71-4a48-8273-f6bb0bf7874d",
               "system": true
             },
             {
@@ -6461,7 +6461,7 @@
           "method": "POST"
         },
         "response": {
-          "id": "eb610aba-13ee-489a-9b9b-4715f68fb5dd",
+          "id": "ba437457-2d60-4deb-a7d4-9b38127471d8",
           "status": "OK",
           "code": 200,
           "header": [
@@ -6495,7 +6495,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -6555,7 +6555,7 @@
           "responseTime": 2,
           "responseSize": 40
         },
-        "id": "c2e65fbf-d2c4-4c94-96a3-920827d67185",
+        "id": "c7c9ba7e-50b1-4dd4-b86f-671a20ba245e",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -6569,15 +6569,15 @@
       },
       {
         "cursor": {
-          "ref": "b4dffdf1-b687-4d1f-8d07-063d199880dc",
+          "ref": "1de57bce-d3cc-419a-bdfc-be8a0fc5dd4d",
           "length": 22,
           "cycles": 1,
           "position": 16,
           "iteration": 0,
-          "httpRequestId": "23b66c0c-7823-42f7-9923-7e4b7427c30e"
+          "httpRequestId": "ffc298b8-77d0-4d3d-a9f2-6bbcc3945789"
         },
         "item": {
-          "id": "1ce23031-8069-4295-8010-8d5f4a49967d",
+          "id": "988773a7-5a27-44e8-8bcd-7bd2ad5cef62",
           "name": "Students - Protected (JWT) - GET /students/protected/jwt-only",
           "request": {
             "url": {
@@ -6605,7 +6605,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "3c86ccac-0a18-45bc-99d9-b5313f868ee5",
+                "id": "c11b3f55-d758-43ac-9c8f-02820087332a",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
@@ -6617,7 +6617,7 @@
                   "  pm.expect(json).to.have.property(\"message\");",
                   "});"
                 ],
-                "_lastExecutionId": "17de6afa-6ef9-45ca-b922-ce90b1e7afe4"
+                "_lastExecutionId": "e064eece-fe60-48f8-8393-30d53581811e"
               }
             }
           ]
@@ -6640,7 +6640,7 @@
           "header": [
             {
               "key": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"
             },
             {
               "key": "User-Agent",
@@ -6659,7 +6659,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "290152a3-da4f-4f96-9dc4-62b368ac7a58",
+              "value": "50d8f88c-3393-4075-99b1-0f37be10ce2c",
               "system": true
             },
             {
@@ -6686,7 +6686,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "6e3353dc-262d-452d-b0e2-0e4a72fde91e",
+          "id": "66ae6f8e-8e6a-4e66-b1cb-95e1f641c117",
           "status": "OK",
           "code": 200,
           "header": [
@@ -6712,11 +6712,11 @@
             },
             {
               "key": "ETag",
-              "value": "W/\"8e-4gniWw9Iep2WeBkc34jKvUn1y8g\""
+              "value": "W/\"8e-JZpn+oLlnShKwTbJqNg8LAAwjNc\""
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -6848,10 +6848,10 @@
               54,
               52,
               54,
-              54,
-              54,
+              55,
+              51,
               52,
-              49,
+              48,
               55,
               44,
               34,
@@ -6866,9 +6866,9 @@
               52,
               54,
               55,
+              55,
               48,
               48,
-              49,
               55,
               125,
               125
@@ -6878,7 +6878,7 @@
           "responseTime": 2,
           "responseSize": 142
         },
-        "id": "1ce23031-8069-4295-8010-8d5f4a49967d",
+        "id": "988773a7-5a27-44e8-8bcd-7bd2ad5cef62",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -6892,15 +6892,15 @@
       },
       {
         "cursor": {
-          "ref": "0702a5e1-b79d-4dad-b21e-1c00b9a294ff",
+          "ref": "3150e81d-0f32-4f0a-8a77-88fea0f20d0f",
           "length": 22,
           "cycles": 1,
           "position": 17,
           "iteration": 0,
-          "httpRequestId": "b61e28fd-d60a-42c3-bf3d-4124a9fdec50"
+          "httpRequestId": "ac746156-3aa3-4b57-9ef3-2c74b72ad4a5"
         },
         "item": {
-          "id": "3320c29d-a1ff-4156-9bbb-ac03a2d7e975",
+          "id": "93fd951a-605a-4e0c-998a-7ec05e0ba943",
           "name": "Error Case - Invalid ID - GET /students/abc",
           "request": {
             "url": {
@@ -6921,7 +6921,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "575860f7-f148-41b3-998d-99bb398585d0",
+                "id": "e75abf4b-d591-4b28-92bb-560a108b7564",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 400\", function () {",
@@ -6933,7 +6933,7 @@
                   "  pm.expect(json).to.have.property(\"error\");",
                   "});"
                 ],
-                "_lastExecutionId": "5484e619-3d12-4303-814d-288ef5cab742"
+                "_lastExecutionId": "163c3bc5-f6ad-4924-a322-141dc35dffb3"
               }
             }
           ]
@@ -6970,7 +6970,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "061e951c-a092-46df-aa3c-e3700cbc5c6a",
+              "value": "be2de622-080d-4b70-bfb9-e893416c8e8e",
               "system": true
             },
             {
@@ -6997,7 +6997,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "e44fe899-0d2e-4c24-b0e2-a61edf23ba4c",
+          "id": "fc0cadbb-dd5e-47c6-80d0-024f0b216973",
           "status": "Bad Request",
           "code": 400,
           "header": [
@@ -7027,7 +7027,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -7088,7 +7088,7 @@
           "responseTime": 1,
           "responseSize": 41
         },
-        "id": "3320c29d-a1ff-4156-9bbb-ac03a2d7e975",
+        "id": "93fd951a-605a-4e0c-998a-7ec05e0ba943",
         "assertions": [
           {
             "assertion": "Status code is 400",
@@ -7102,15 +7102,15 @@
       },
       {
         "cursor": {
-          "ref": "46890b9b-432f-482d-9883-3f9c3caf08d8",
+          "ref": "dec4f9f4-bb43-49a8-bcad-0c351e6a1486",
           "length": 22,
           "cycles": 1,
           "position": 18,
           "iteration": 0,
-          "httpRequestId": "2029a185-fb56-4314-801d-26e939f8e796"
+          "httpRequestId": "d2bfd9fe-833c-4fcc-bda4-2c8c17891d4c"
         },
         "item": {
-          "id": "31f43f75-48e8-4fa8-8b5b-3849aead2e71",
+          "id": "d50d766c-8117-47f4-8099-2fb4530725df",
           "name": "Error Case - Not Found - GET /students/99999",
           "request": {
             "url": {
@@ -7131,7 +7131,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "9dc5cebc-79b5-4dc0-aebc-905fdc95ac74",
+                "id": "ad4298ae-98eb-4fcc-a341-c85534678232",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 404\", function () {",
@@ -7143,7 +7143,7 @@
                   "  pm.expect(json).to.have.property(\"error\");",
                   "});"
                 ],
-                "_lastExecutionId": "3c072087-7056-43ad-9df0-7b5cb610adea"
+                "_lastExecutionId": "9bf6939d-1b78-48fd-ae96-416f02718c6a"
               }
             }
           ]
@@ -7180,7 +7180,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "bda9154a-087e-4d23-bacc-fe8a7c274db8",
+              "value": "c691033f-66c8-453c-87cb-0366d7819dbb",
               "system": true
             },
             {
@@ -7207,7 +7207,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "46767ba7-f460-47df-957e-0d9f23c3f43e",
+          "id": "94388a3f-2327-46a5-8a9d-141a4d5a002f",
           "status": "Not Found",
           "code": 404,
           "header": [
@@ -7237,7 +7237,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -7297,10 +7297,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 1,
+          "responseTime": 2,
           "responseSize": 43
         },
-        "id": "31f43f75-48e8-4fa8-8b5b-3849aead2e71",
+        "id": "d50d766c-8117-47f4-8099-2fb4530725df",
         "assertions": [
           {
             "assertion": "Status code is 404",
@@ -7314,15 +7314,15 @@
       },
       {
         "cursor": {
-          "ref": "df0385ef-7493-438e-8a53-ecf2ca8b86a3",
+          "ref": "18915faa-0683-4117-aa42-2621304ede69",
           "length": 22,
           "cycles": 1,
           "position": 19,
           "iteration": 0,
-          "httpRequestId": "87712d86-33b2-4b61-aef0-07ff5e35c534"
+          "httpRequestId": "4603b1dd-6740-4306-81cf-c4607f6345ef"
         },
         "item": {
-          "id": "ff9e3a5e-2225-4030-8142-2612823ef2ad",
+          "id": "7d862c7e-6707-43af-b800-9336a91d9e70",
           "name": "Error Case - Create Student Missing Fields - POST /students",
           "request": {
             "url": {
@@ -7356,7 +7356,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "7d93301d-201e-43c3-8b76-5a1450f4ba00",
+                "id": "5b836380-270f-4e56-aff1-9dc08400604a",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 400\", function () {",
@@ -7369,7 +7369,7 @@
                   "  pm.expect(json.error).to.include(\"Validation failed\");",
                   "});"
                 ],
-                "_lastExecutionId": "25fd23ff-a6c8-4626-af29-599a30494835"
+                "_lastExecutionId": "00dda9a7-8f75-47cb-bfc0-d74dfd266871"
               }
             }
           ]
@@ -7390,7 +7390,7 @@
           "header": [
             {
               "key": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NjY0MTcsImV4cCI6MTc2NDY3MDAxN30._GDd8JPA23WbyQ6ncbb308x85thmJPTeEb7gmt2pV6g"
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3R1c2VyIiwicm9sZSI6InN0dWRlbnQtYWRtaW4iLCJpYXQiOjE3NjQ2NzM0MDcsImV4cCI6MTc2NDY3NzAwN30.e-XLhC_CzIfsRL338rfVEoNgM7056nUrnu1JW8YvEG4"
             },
             {
               "key": "Content-Type",
@@ -7413,7 +7413,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "5b0d9360-55c7-40c3-9753-d4f5ac8be649",
+              "value": "383160fc-8845-423f-a9b2-1720036587e4",
               "system": true
             },
             {
@@ -7449,7 +7449,7 @@
           }
         },
         "response": {
-          "id": "776083d5-ba9c-4b0d-a68d-e766ee38cac6",
+          "id": "1eb3411b-d279-4282-9b8b-f88a517b0048",
           "status": "Bad Request",
           "code": 400,
           "header": [
@@ -7479,7 +7479,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -7671,10 +7671,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 2,
+          "responseTime": 3,
           "responseSize": 175
         },
-        "id": "ff9e3a5e-2225-4030-8142-2612823ef2ad",
+        "id": "7d862c7e-6707-43af-b800-9336a91d9e70",
         "assertions": [
           {
             "assertion": "Status code is 400",
@@ -7688,15 +7688,15 @@
       },
       {
         "cursor": {
-          "ref": "57ce0fd9-e079-45ce-aa14-a5082c9fc258",
+          "ref": "94161647-8aee-4c8a-ac85-7c0a8f565f2b",
           "length": 22,
           "cycles": 1,
           "position": 20,
           "iteration": 0,
-          "httpRequestId": "2e3090f9-f6f6-4296-831b-8977227e67e7"
+          "httpRequestId": "b15a8a3d-ebbb-4844-a2a8-c7ce544cd4aa"
         },
         "item": {
-          "id": "c3b9f3ff-4a66-43ab-957c-0dbc143ac6f1",
+          "id": "f902861d-2ecd-4c84-a947-738e690b1408",
           "name": "Error Case - Protected JWT without token - GET /students/protected/jwt-only",
           "request": {
             "url": {
@@ -7718,7 +7718,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "5ae84c78-a1e1-47f4-be2f-5ee36628fbcb",
+                "id": "ada2a431-795b-495a-8b70-e4121f3ece03",
                 "type": "text/javascript",
                 "exec": [
                   "pm.test(\"Status code is 401\", function () {",
@@ -7730,7 +7730,7 @@
                   "  pm.expect(json).to.have.property(\"error\");",
                   "});"
                 ],
-                "_lastExecutionId": "c887069d-b99d-4764-9d9b-b00f15fe1254"
+                "_lastExecutionId": "1c489ea1-b891-43cf-9ce4-d3ad573d4633"
               }
             }
           ]
@@ -7768,7 +7768,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "dde60e70-2d05-4fc7-9ab0-1e4cb916cb31",
+              "value": "3ed1a747-cd34-4e39-be96-d7b67bc6d316",
               "system": true
             },
             {
@@ -7795,7 +7795,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "6f40a518-c002-45d4-a610-781c103009ab",
+          "id": "9b98213c-4383-4306-b8cb-d070086acfb7",
           "status": "Unauthorized",
           "code": 401,
           "header": [
@@ -7825,7 +7825,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -7930,7 +7930,7 @@
           "responseTime": 2,
           "responseSize": 85
         },
-        "id": "c3b9f3ff-4a66-43ab-957c-0dbc143ac6f1",
+        "id": "f902861d-2ecd-4c84-a947-738e690b1408",
         "assertions": [
           {
             "assertion": "Status code is 401",
@@ -7944,15 +7944,15 @@
       },
       {
         "cursor": {
-          "ref": "30374342-d571-47b8-af36-87f5e7eceb60",
+          "ref": "ea925472-be1c-4efc-9da0-43673fb53c31",
           "length": 22,
           "cycles": 1,
           "position": 21,
           "iteration": 0,
-          "httpRequestId": "14441c15-4c57-4a6e-bf24-90e8f86d3f5a"
+          "httpRequestId": "178a4ca7-2245-44a5-a460-f45f24e4c830"
         },
         "item": {
-          "id": "9766cf6f-17d6-4f92-8932-a86c1bc6eda8",
+          "id": "505efaa7-0e76-47e7-8af7-20e4d1dd80cc",
           "name": "Error Case - Protected Cookie without session - GET /students/protected/cookie-only",
           "request": {
             "url": {
@@ -7974,7 +7974,7 @@
             {
               "listen": "test",
               "script": {
-                "id": "00dbf531-efa8-4a35-982c-98888a0ba2a2",
+                "id": "02a3dc7f-4888-4336-9b1f-c20c41571f1a",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -8014,13 +8014,13 @@
                   "  });",
                   "}"
                 ],
-                "_lastExecutionId": "02cd720a-927f-4a02-a313-9c93fefd9de3"
+                "_lastExecutionId": "f5dfec01-eb5e-409d-a70e-3ce92e542fff"
               }
             },
             {
               "listen": "prerequest",
               "script": {
-                "id": "4348d02b-6c46-4db1-887d-7c444ec7788b",
+                "id": "54b81c08-2823-4f3c-9de3-fe0a6e521892",
                 "type": "text/javascript",
                 "packages": {},
                 "exec": [
@@ -8034,7 +8034,7 @@
                   "  }",
                   "});"
                 ],
-                "_lastExecutionId": "c3f83bd8-d442-408e-a57d-df46b45af056"
+                "_lastExecutionId": "d0e8dce1-5d21-4bd0-afb0-8dcfe1b38e4b"
               }
             }
           ]
@@ -8072,7 +8072,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "de340c6b-4769-4a10-a38f-d8c6af037906",
+              "value": "db9a63d3-b438-4817-a694-7922b66fc9c4",
               "system": true
             },
             {
@@ -8099,7 +8099,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "37b0f12c-271f-4da8-a71d-36b2eacb425a",
+          "id": "2b766957-ba7f-4f35-b445-bfa8eb2af742",
           "status": "Unauthorized",
           "code": 401,
           "header": [
@@ -8129,7 +8129,7 @@
             },
             {
               "key": "Date",
-              "value": "Tue, 02 Dec 2025 09:06:58 GMT"
+              "value": "Tue, 02 Dec 2025 11:03:27 GMT"
             },
             {
               "key": "Connection",
@@ -8220,10 +8220,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 1,
+          "responseTime": 2,
           "responseSize": 74
         },
-        "id": "9766cf6f-17d6-4f92-8932-a86c1bc6eda8",
+        "id": "505efaa7-0e76-47e7-8af7-20e4d1dd80cc",
         "assertions": [
           {
             "assertion": "Unauthenticated: Status 401 and error present",
