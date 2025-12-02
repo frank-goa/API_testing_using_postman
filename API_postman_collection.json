@@ -224,12 +224,10 @@
 					"raw": "{\n  \"username\": \"testuser\",\n  \"password\": \"password123\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/auth/login-jwt",
-					"protocol": "http",
+					"raw": "{{base_url}}/auth/login-jwt",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"auth",
 						"login-jwt"
@@ -274,12 +272,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/auth/me",
-					"protocol": "http",
+					"raw": "{{base_url}}/auth/me",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"auth",
 						"me"
@@ -323,12 +319,10 @@
 					"raw": "{\n  \"username\": \"testuser\",\n  \"password\": \"password123\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/auth/login-cookie",
-					"protocol": "http",
+					"raw": "{{base_url}}/auth/login-cookie",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"auth",
 						"login-cookie"
@@ -367,12 +361,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/auth/me-cookie",
-					"protocol": "http",
+					"raw": "{{base_url}}/auth/me-cookie",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"auth",
 						"me-cookie"
@@ -419,12 +411,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students",
-					"protocol": "http",
+					"raw": "{{base_url}}/students",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students"
 					]
@@ -463,12 +453,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/1",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/1",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"1"
@@ -522,12 +510,10 @@
 					"raw": "{\n  \"name\": \"Postman Student 1\",\n  \"age\": 25,\n  \"email\": \"postman.student1@example.com\",\n  \"isActive\": true\n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/students",
-					"protocol": "http",
+					"raw": "{{base_url}}/students",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students"
 					]
@@ -574,12 +560,10 @@
 					"raw": "{\n  \"name\": \"Updated Postman Student\",\n  \"age\": 25,\n  \"email\": \"updated.postman@example.com\",\n  \"isActive\": false\n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/students/{{createdStudentId}}",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/{{createdStudentId}}",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"{{createdStudentId}}"
@@ -626,12 +610,10 @@
 					"raw": "{\n  \"age\": 23\n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/students/{{createdStudentId}}",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/{{createdStudentId}}",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"{{createdStudentId}}"
@@ -677,12 +659,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/students/{{createdStudentId}}",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/{{createdStudentId}}",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"{{createdStudentId}}"
@@ -715,12 +695,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/protected/cookie-only",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/protected/cookie-only",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"protected",
@@ -754,12 +732,10 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/auth/logout-cookie",
-					"protocol": "http",
+					"raw": "{{base_url}}/auth/logout-cookie",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"auth",
 						"logout-cookie"
@@ -797,12 +773,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000/students/protected/jwt-only",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/protected/jwt-only",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"protected",
@@ -836,12 +810,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/abc",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/abc",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"abc"
@@ -874,12 +846,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/99999",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/99999",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"99999"
@@ -926,12 +896,10 @@
 					"raw": "{\n  \"name\": \"Invalid Student\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/students",
-					"protocol": "http",
+					"raw": "{{base_url}}/students",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students"
 					]
@@ -963,12 +931,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/protected/jwt-only",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/protected/jwt-only",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"protected",
@@ -1032,11 +998,11 @@
 						"exec": [
 							"// Pre-request script: clear cookies for this host so request is unauthenticated",
 							"const jar = pm.cookies.jar();",
-							"jar.clear('http://localhost:3000', function (err) {",
+							"jar.clear('{{base_url}}', function (err) {",
 							"  if (err) {",
 							"    console.log(\"Error clearing cookie jar:\", err);",
 							"  } else {",
-							"    console.log(\"Cleared cookies for http://localhost:3000\");",
+							"    console.log(\"Cleared cookies for {{base_url}}\");",
 							"  }",
 							"});"
 						],
@@ -1050,12 +1016,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/protected/cookie-only",
-					"protocol": "http",
+					"raw": "{{base_url}}/students/protected/cookie-only",
 					"host": [
-						"localhost"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"protected",
