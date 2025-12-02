@@ -41,6 +41,8 @@ Out-of-scope:
 - Use Postman collection: `API Practice Project (Full with Tests)`
 - Environment variables to set in Postman: `base_url` (optional), `jwtToken`, `createdStudentId` (used by flow)
 
+Notes: the repository now includes `QA.postman_environment.json` with `base_url` pre-populated for local runs. The project also includes a `test:newman` npm script which sets `--env-var base_url=http://localhost:3000` for automated runs.
+
 ## 8. Test Execution
 - Manual: Run requests in Postman in the order:
   1. `Health`  
@@ -54,7 +56,10 @@ Out-of-scope:
 
 ```bash
 npm install -g newman
-newman run "API Practice Project (Full with Tests).postman_collection.json" -e <your-environment>.postman_environment.json
+newman run "API_postman_collection.json" -e QA.postman_environment.json
+
+# Or use the provided npm script (recommended):
+npm run test:newman
 ```
 
 ## 9. Pass/Fail Criteria
@@ -65,6 +70,10 @@ newman run "API Practice Project (Full with Tests).postman_collection.json" -e <
 - Keep `TEST_PLAN.md` and `Postman` collection in the repo.
 - Update test cases when endpoints change or new features are added.
 - Document new environment variables or external dependencies.
+
+Repository housekeeping notes:
+- A `.gitignore` file was added and `node_modules/` has been removed from Git tracking. Developers should run `npm install` after cloning.
+- Generated reports (the `reports/` folder) are intentionally ignored from version control — they are produced locally or uploaded as CI artifacts.
 
 ## 11. Responsibilities
 - Test author / maintainer: update Postman collection and test plan.
@@ -77,6 +86,13 @@ newman run "API Practice Project (Full with Tests).postman_collection.json" -e <
 ## 13. Reporting
 - Use Postman or Newman reports for test results (HTML or JSON output) and attach to issue tracker when failures occur.
 
+CI recommendation: Add a GitHub Actions workflow to run `npm ci` and `npm run test:newman` on push/PR and upload the `reports/` folder as build artifacts. This lets you display a build/test badge on the README and preserves historical test runs in CI.
+
 ## 14. Notes
 - This project is a learning project. Passwords are hard-coded and data is stored in JSON for convenience.
 - For CI, replace JSON persistence with a disposable test database or mocking approach.
+
+Recent repository updates (housekeeping):
+- Added `README.md` with setup and demo instructions.
+- Added `docs/DEMO_INSTRUCTIONS.md` and `scripts/render_demo_with_terminalizer.sh` to help produce a short demo GIF (`docs/demo.gif`).
+- Added `.gitignore` and removed `node_modules/` from the repository to keep the repo lightweight.
