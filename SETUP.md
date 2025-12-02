@@ -1001,3 +1001,10 @@ MIT License - Free to use and modify for learning purposes.
 
 ## Stopping the Server
 control + C
+
+
+## Install Newman and reporters
+```bash
+npm install -g newman newman-reporter-htmlextra newman-reporter-junit
+```
+
