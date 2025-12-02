@@ -19,5 +19,12 @@
     "age": 19,
     "email": "charlie@example.com",
     "isActive": false
+  },
+  {
+    "id": 4,
+    "name": "Postman Student 1",
+    "age": 25,
+    "email": "postman.student1@example.com",
+    "isActive": true
   }
 ]
