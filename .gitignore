@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE & editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+.Thumbs.db
+
+# Build & compiled output
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test & coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Reports
+reports/
+*.html
+*.xml
+*.json~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Postman local files (if you export locally)
+postman_local.json
+*.postman_environment.json~
+
+# Node development
+.node-gyp/
+.npm/
+
+# IDE cache
+.eslintcache
+.prettierignore
+
+# Demo recordings (if large)
+demo.mov
+demo.cast
+*.webm
