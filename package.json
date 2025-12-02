@@ -27,6 +27,12 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1",
+    "newman-reporter-junitfull": "^1.1.1",
     "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "test:newman": "newman run \"API_postman_collection.json\" -e QA.postman_environment.json -r cli,htmlextra,junitfull,json --reporter-htmlextra-export reports/report.html --reporter-junitfull-export reports/report.xml --reporter-json-export reports/report.json"
   }
 }
