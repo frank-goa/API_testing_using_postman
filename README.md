@@ -47,13 +47,6 @@ Reports are generated under the `reports/` folder (`report.html`, `report.json`,
 - Improve repository structure: move `data/` into `src/data` or add README note explaining persistence is file-backed and not for production.
 - Add license file (`LICENSE`) and contributor guidelines (`CONTRIBUTING.md`) if you plan to accept contributions.
 
-## How to Showcase This Project on LinkedIn
-- Headline (short): "API Testing with Postman & Newman — Express CRUD + JWT & Cookie Auth".
-- Post body: describe the problem you solved (teaching/testing), key technologies used, and what you implemented (collection, automated runs, reports, multi-sheet test-case export).
-- Visuals: include a short GIF or screenshot of `reports/report.html` passing or the terminal running `npm run test:newman` with green checks.
-- Metrics: share test coverage numbers, test counts, or CI passing badge. Example: "22 requests, 52 assertions — all passing".
-- Links: include the GitHub repo link and a short video/demo (hosted on GitHub or Loom). Add a link to the Postman collection (shareable link) if public.
-- Hashtags & mentions: #Postman #Newman #API #NodeJS #Express #Testing #DevOps
 
 ## Files of Interest
 - `API_postman_collection.json` — Postman collection with tests.
@@ -62,9 +55,6 @@ Reports are generated under the `reports/` folder (`report.html`, `report.json`,
 - `SETUP.md` — step-by-step project setup guide.
 - `TEST_PLAN.md` — high-level testing plan.
 
-## Next Steps I Can Help With
-
-If you want, I can now add a simple GitHub Actions workflow to run the Newman tests on each push and upload the `reports/` artifacts — would you like me to add that? ### API Testing Using Postman
 
 ## Demo
 
